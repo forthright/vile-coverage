@@ -1,6 +1,6 @@
 {
   "name": "@brentlintner/vile-coverage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A vile plugin for tracking your code coverage",
   "license": "MPL-2.0",
   "main": "lib/index.js",
