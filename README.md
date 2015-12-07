@@ -19,7 +19,8 @@ A [vile](http://vile.io) plugin for tracking your project's test coverage.
 
 ```yml
 coverage:
-  config: path/to/data.lcov
+  config:
+    path: path/to/data.lcov
 ```
 
 ## Licensing
