@@ -5,7 +5,9 @@ let _ = require("lodash")
 let vile = require("@brentlintner/vile")
 
 let relative_path = (file) =>
-  path.normalize(file.replace(process.cwd()))
+  path.normalize(file)
+    .replace(process.cwd(), "")
+    .replace(/^\.?\//, "")
 
 let total_cov = (lines) =>
   !lines ? 0 :

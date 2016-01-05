@@ -79,6 +79,8 @@ describe "vile-coverage", ->
     describe "when file exists", ->
       beforeEach ->
         lcov_parse.callsArgWith 1, undefined, util.parsed_lcov
+        mimus.stub process, "cwd"
+        process.cwd.returns "/process/cwd"
 
       it "generates the appropriate issues", ->
         cov

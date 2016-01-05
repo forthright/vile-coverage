@@ -1,6 +1,6 @@
 module.exports = [
   {
-    "file": ".\/empty_file.rb",
+    "file": "\/empty_file.rb",
     "lines": {
       "found": 0,
       "hit": 0,
@@ -11,7 +11,7 @@ module.exports = [
     "file": "bad_data_report.rb"
   },
   {
-    "file": ".\/one.rb",
+    "file": "/process/cwd/one.rb",
     "lines": {
       "found": 0,
       "hit": 0,
