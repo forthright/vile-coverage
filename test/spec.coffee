@@ -36,7 +36,7 @@ describe "vile-coverage", ->
           .should.eventually.be.fulfilled.notify ->
             setTimeout ->
               log.error.should.have.been.calledWith(
-                sinon.match "no lcov path"
+                "no lcov path provided!"
               )
               done()
 
@@ -52,7 +52,7 @@ describe "vile-coverage", ->
           .should.eventually.be.fulfilled.notify ->
             setTimeout ->
               log.error.should.have.been.calledWith(
-                sinon.match "no lcov path"
+                "no lcov path provided!"
               )
               done()
 
