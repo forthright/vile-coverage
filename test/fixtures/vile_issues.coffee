@@ -1,31 +1,35 @@
 module.exports = [
   {
-    "file": "empty_file.rb",
-    "msg": "",
+    "path": "empty_file.rb",
+    "message": "Your code coverage is 100%.",
+    "title": "100%",
     "type": "cov",
-    "data": { "coverage": { "total": 100 } },
-    "where": { "end": {}, "start": {} }
+    "signature": "coverage::100",
+    "coverage": { "total": 100 },
   },
   {
-    "file": "bad_data_report.rb",
-    "msg": "",
+    "path": "bad_data_report.rb",
+    "message": "Your code coverage is 0%.",
+    "title": "0%",
     "type": "cov",
-    "data": { "coverage": { "total": 0 } },
-    "where": { "end": {}, "start": {} }
+    "signature": "coverage::0",
+    "coverage": { "total": 0 }
   },
   {
-    "file": "one.rb",
-    "msg": "",
+    "path": "one.rb",
+    "message": "Your code coverage is 91.67%.",
+    "title": "91.67%",
     "type": "cov",
-    "data": { "coverage": { "total": 91.67 } },
-    "where": { "end": {}, "start": {} }
+    "signature": "coverage::91.67",
+    "coverage": { "total": 91.67 }
   },
   {
-    "file": "two.rb",
-    "msg": "",
+    "path": "two.rb",
+    "message": "Your code coverage is 100%.",
+    "title": "100%",
     "type": "cov",
-    "data": { "coverage": { "total": 100 } },
-    "where": { "end": {}, "start": {} }
+    "signature": "coverage::100",
+    "coverage": { "total": 100 }
   }
 ]
 

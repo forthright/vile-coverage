@@ -11,27 +11,26 @@ let relative_path = (file) =>
 
 let total_cov = (lines) =>
   !lines ? 0 :
-  lines.length <= 0 ? 100 :
-  (_.reduce(lines, (count, item) => {
-    return item.hit > 0 ? count + 1 : count
-  }, 0) / lines.length) * 100
+    lines.length <= 0 ? 100 :
+      (_.reduce(lines, (count, item) => {
+        return item.hit > 0 ? count + 1 : count
+      }, 0) / lines.length) * 100
 
 let into_issues = (lcov) =>
-  _.map(lcov, (item) =>
-    vile.issue(
-      vile.COV,
-      relative_path(item.file),
-      undefined,
-      undefined,
-      undefined, {
-        coverage: {
-          total: Number(total_cov(
-            _.get(item, "lines.details")
-          ).toFixed(2))
-        }
-      }
-    )
-  )
+  _.map(lcov, (item) => {
+    let total = Number(total_cov(
+      _.get(item, "lines.details")
+    ).toFixed(2))
+
+    return vile.issue({
+      type: vile.COV,
+      path: relative_path(item.file),
+      title: `${total}%`,
+      message: `Your code coverage is ${total}%.`,
+      signature: `coverage::${total}`,
+      coverage: { total: total }
+    })
+  })
 
 let report_cov = (plugin_config) =>
   new Promise((resolve, reject) => {
