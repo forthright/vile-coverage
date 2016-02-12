@@ -2,7 +2,7 @@ let path = require("path")
 let Promise = require("bluebird")
 let lcov_parse = require("lcov-parse")
 let _ = require("lodash")
-let vile = require("@brentlintner/vile")
+let vile = require("@forthright/vile")
 
 let relative_path = (file) =>
   path.normalize(file)

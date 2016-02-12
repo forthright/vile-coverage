@@ -1,5 +1,5 @@
 {
-  "name": "@brentlintner/vile-coverage",
+  "name": "@forthright/vile-coverage",
   "version": "0.2.0",
   "description": "A vile plugin for tracking your code coverage",
   "license": "MPL-2.0",
@@ -18,7 +18,7 @@
     "update": "ncu -u"
   },
   "dependencies": {
-    "@brentlintner/vile": "^0.5.2",
+    "@forthright/vile": "^0.5.2",
     "bluebird": "^3.0.6",
     "lcov-parse": "0.0.10",
     "lodash": "^3.10.1"
