@@ -1,5 +1,7 @@
 # vile-coverage [![Circle CI](https://circleci.com/gh/brentlintner/vile-coverage.svg?style=svg&circle-token=99e11e5fda6649fe9d8ee644b3d1e1337322a5d6)](https://circleci.com/gh/brentlintner/vile-coverage)
 
+[![score-badge](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage/badges/score?token=-1hqvssNyv6oFhXvWMy7)](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage) [![security-badge](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage/badges/security?token=-1hqvssNyv6oFhXvWMy7)](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage) [![coverage-badge](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage/badges/coverage?token=-1hqvssNyv6oFhXvWMy7)](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage) [![dependency-badge](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage/badges/dependency?token=-1hqvssNyv6oFhXvWMy7)](http://joffrey-baratheon.herokuapp.com/brentlintner/vile-coverage)
+
 A [vile](http://vile.io) plugin for tracking your project's test coverage.
 
 ## Supported Formats
