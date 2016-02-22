@@ -1,18 +1,33 @@
 vile:
   ignore: [
       "node_modules",
-      ".test",
       "coverage",
       "tags",
+      ".ctags",
       "test/fixtures/**",
-      ".git"
+      ".test",
+      ".git",
+      ".eslintrc",
+      ".eslintignore",
+      ".fs-lint",
+      ".npmignore",
+      ".gitignore",
+      ".vilerc",
+      ".vile.yml",
+      "circle.yml",
+      "coffeelint.json",
+      "/lib"
     ]
 
 depcheck:
   config:
     ignore_dev_deps: false
     ignore_dirs: [ ]
-    ignore_deps: [ "pryjs", "bluebird" ]
+    ignore_deps: [
+        "pryjs",
+        "bluebird",
+        "@forthright/*"
+      ]
 
 coverage:
   config:
@@ -28,28 +43,27 @@ length:
   ignore: [ "lib" ]
 
 license:
-  config: [
-      "MPL-2.0",
+  config:
+    ignored: [ "tslint" ]
+    disallowed: [ ]
+    allowed: [
       "MIT",
-      "MIT*",
-      "The MIT License",
+      "MPL",
+      "MPL-2.0",
       "Public Domain",
       "PSF",
       "BSD",
-      "FreeBSD",
-      "BSD-like",
-      "BSD*",
       "BSD-3-Clause",
       "BSD-2-Clause",
-      "BSD-3-Clause AND MIT",
+      "Unlicense",
       "Artistic-2.0",
-      "(BSD-2-Clause OR MIT OR Apache-2.0)",
       "ISC",
       "WTFPL",
-      "(BSD-2-Clause OR WTFPL)",
-      "Apache*",
-      "Apache License 2.0",
-      "Apache 2.0",
+      "Apache",
       "Apache-2.0",
-      "WTFPL"
+      "Apache 2.0",
+      "Apache*",
+      "Apachev2",
+      "WTFPL",
+      "GPL"
     ]
