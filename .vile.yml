@@ -14,6 +14,10 @@ depcheck:
     ignore_dirs: [ ]
     ignore_deps: [ "pryjs", "bluebird" ]
 
+coverage:
+  config:
+    path: coverage/lcov.info
+
 coffeelint:
   config: coffeelint.json
 
