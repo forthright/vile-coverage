@@ -15,6 +15,8 @@
     "compile": "node bin/compile",
     "compile-dev": "node bin/compile-dev",
     "dev": "sh bin/dev",
+    "istanbul": "istanbul",
+    "ncu": "ncu -a",
     "test": "node bin/test",
     "test-cov": "node bin/test-cov",
     "update": "ncu -u",
