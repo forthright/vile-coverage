@@ -10,11 +10,13 @@
     "src"
   ],
   "scripts": {
-    "dev": "bin/dev",
-    "compile": "bin/compile",
-    "compile-dev": "bin/compile-dev",
-    "test": "bin/test",
-    "test-cov": "bin/test-cov",
+    "babel": "babel",
+    "coffee": "coffee",
+    "compile": "node bin/compile",
+    "compile-dev": "node bin/compile-dev",
+    "dev": "sh bin/dev",
+    "test": "node bin/test",
+    "test-cov": "node bin/test-cov",
     "update": "ncu -u",
     "vile": "vile -cpisd --nodecorations"
   },
