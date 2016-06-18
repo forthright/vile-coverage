@@ -17,6 +17,7 @@
     "dev": "sh bin/dev",
     "istanbul": "istanbul",
     "ncu": "ncu -a",
+    "lint-cov": "node bin/lint-cov",
     "test": "node bin/test",
     "test-cov": "node bin/test-cov",
     "update": "ncu -u",
