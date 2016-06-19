@@ -4,11 +4,6 @@ let lcov_parse = require("lcov-parse")
 let _ = require("lodash")
 let vile = require("@forthright/vile")
 
-let relative_path = (file) =>
-  path.normalize(file)
-    .replace(process.cwd(), "")
-    .replace(/^\.?\//, "")
-
 let total_cov = (lines) =>
   !lines ? 0 :
     lines.length <= 0 ? 100 :
@@ -24,8 +19,7 @@ let into_issues = (lcov) =>
 
     return vile.issue({
       type: vile.COV,
-      path: relative_path(item.file),
-      title: `${total}%`,
+      path: _.get(item, "file", ""),
       message: `Your code coverage is ${total}%.`,
       signature: `coverage::${total}`,
       coverage: { total: total }

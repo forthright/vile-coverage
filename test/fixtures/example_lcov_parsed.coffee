@@ -1,6 +1,6 @@
 module.exports = [
   {
-    "file": "\/empty_file.rb",
+    "file": "./empty_file.rb",
     "lines": {
       "found": 0,
       "hit": 0,
