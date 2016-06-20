@@ -1,4 +1,3 @@
-let path = require("path")
 let Promise = require("bluebird")
 let lcov_parse = require("lcov-parse")
 let _ = require("lodash")
