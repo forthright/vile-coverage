@@ -18,6 +18,7 @@
     "istanbul": "istanbul",
     "ncu": "ncu -a",
     "lint-cov": "node bin/lint-cov",
+    "release-it": "release-it",
     "test": "node bin/test",
     "test-cov": "node bin/test-cov",
     "update": "ncu -u",
