@@ -39,6 +39,7 @@ describe "vile-coverage", ->
                 "no lcov path provided!"
               )
               done()
+        return
 
     describe "when no config path is given", ->
       it "resolves with an empty array", ->
@@ -55,6 +56,7 @@ describe "vile-coverage", ->
                 "no lcov path provided!"
               )
               done()
+        return
 
     describe "when there is an lcov parse err", ->
       error = undefined
@@ -75,6 +77,7 @@ describe "vile-coverage", ->
             setTimeout ->
               log.error.should.have.been.calledWith error
               done()
+        return
 
     describe "when file exists", ->
       beforeEach ->
