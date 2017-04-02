@@ -13,13 +13,13 @@ describe "vile-coverage", ->
   after mimus.restore
   afterEach mimus.reset
 
-  before ->
+  beforeEach ->
     mimus.set cov, "lcov_parse", lcov_parse
 
   describe "an example lcov file", ->
     log = error: mimus.stub()
 
-    before ->
+    beforeEach ->
       mimus
         .stub vile.logger, "create"
         .returns log
