@@ -1,7 +1,7 @@
 let Promise = require("bluebird")
 let lcov_parse = require("lcov-parse")
 let _ = require("lodash")
-let vile = require("@forthright/vile")
+let vile = require("vile")
 
 let total_cov = (lines) =>
   !lines ? 0 :
