@@ -7,4 +7,4 @@ chai.use sinonChai
     .use chaiAsPromised
     .should()
 
-module.expots = chai
+module.exports = chai
