@@ -52,7 +52,7 @@
     "release-it": "^2.7.1",
     "shelljs": "^0.7.7",
     "sinon-chai": "^2.9.0",
-    "vile": ">=0.13.0",
+    "vile": "^0.14.0",
     "vile-coffeelint": ">=0.1.14",
     "vile-comment": ">=0.1.17",
     "vile-coverage": ">=0.2.14",
