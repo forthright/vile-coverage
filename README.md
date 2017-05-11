@@ -6,6 +6,9 @@ A [vile](https://vile.io) plugin for tracking your project's test coverage.
 
 * lcov
 
+*Note: Currently only total file coverage is generated. Ideally, per method
+and per line coverage stats will be supported by Vile in future versions.*
+
 ## Requirements
 
 - [nodejs](http://nodejs.org)
