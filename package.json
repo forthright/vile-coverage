@@ -31,7 +31,7 @@
     "test": "node bin/test",
     "test-cov": "node bin/test-cov",
     "update": "ncu -u",
-    "vile": "vile p -u -n"
+    "vile": "vile a -u -n"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
