@@ -1,6 +1,6 @@
 # vile-coverage [![Circle CI](https://circleci.com/gh/forthright/vile-coverage.svg?style=shield&circle-token=99e11e5fda6649fe9d8ee644b3d1e1337322a5d6)](https://circleci.com/gh/forthright/vile-coverage) [![Build status](https://ci.appveyor.com/api/projects/status/vivh8lh9uvdvry00/branch/master?svg=true)](https://ci.appveyor.com/project/brentlintner/vile-coverage/branch/master) [![score-badge](https://vile.io/api/v0/projects/vile-coverage/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coverage) [![security-badge](https://vile.io/api/v0/projects/vile-coverage/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coverage) [![coverage-badge](https://vile.io/api/v0/projects/vile-coverage/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coverage) [![dependency-badge](https://vile.io/api/v0/projects/vile-coverage/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-coverage)
 
-A [vile](https://vile.io) plugin for tracking your project's test coverage.
+A [Vile](https://vile.io) plugin for tracking your project's test coverage.
 
 ## Supported Formats
 
@@ -11,8 +11,7 @@ and per line coverage stats will be supported by Vile in future versions.*
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
+- [Node.js](http://nodejs.org)
 
 ## Installation
 
@@ -28,7 +27,7 @@ coverage:
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
+This project uses [Semver](http://semver.org).
 
 ## Licensing
 
@@ -55,8 +54,6 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Maintainers
@@ -70,7 +67,7 @@ By participating in this project you agree to our [Code of Conduct](CODE_OF_COND
 - `test` is any test code, written in [CoffeeScript](http://coffeescript.org)
 - `.test` where coffeescript is generated to
 
-## Hacking
+## Developing
 
     cd vile-coverage
     npm install

@@ -1,7 +1,7 @@
 {
   "name": "vile-coverage",
   "version": "0.2.16",
-  "description": "A vile plugin for tracking your code coverage",
+  "description": "Track your project's test coverage.",
   "main": "lib/index.js",
   "files": [
     "lib",
