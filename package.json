@@ -19,19 +19,13 @@
     "url": "https://github.com/forthright/vile-coverage.git"
   },
   "scripts": {
-    "babel": "babel",
-    "coffee": "coffee",
-    "compile": "node bin/compile",
-    "compile-dev": "node bin/compile-dev",
-    "dev": "sh bin/dev",
-    "istanbul": "istanbul",
-    "ncu": "ncu -a",
-    "lint-cov": "node bin/lint-cov",
-    "release-it": "release-it",
-    "test": "node bin/test",
-    "test-cov": "node bin/test-cov",
-    "update": "ncu -u",
-    "vile": "vile a -u -n"
+    "clean": "rm -rf {.nyc_output,coverage,lib} && git checkout -- lib",
+    "compile": "babel -d lib -m common src",
+    "dev": "bin/dev",
+    "test": "globstar -- _mocha \"test/spec/**/*.coffee\"",
+    "test-cov": "nyc -r json -r lcov -r text -x test -x **/node_modules/** npm run -s test",
+    "vile": "vile a -unx src:lib",
+    "release-it": "release-it"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -44,13 +38,13 @@
     "chai": "^4.0.2",
     "chai-as-promised": "^7.0.0",
     "coffee-script": "^1.12.6",
+    "globstar": "^1.0.0",
     "istanbul": "^0.4.5",
     "mimus": "^0.2.6",
     "mocha": "^3.4.2",
-    "npm-check-updates": "^2.12.0",
-    "pryjs": "^1.0.3",
+    "nyc": "^11.0.3",
     "release-it": "^2.8.0",
-    "shelljs": "^0.7.8",
+    "sinon": "^3.0.0",
     "sinon-chai": "^2.11.0",
     "vile": "^0.18.0",
     "vile-coffeelint": "^0.1.16",
@@ -58,12 +52,13 @@
     "vile-coverage": "^0.2.15",
     "vile-depcheck": "^0.1.13",
     "vile-eclint": "^0.1.14",
+    "vile-escomplex": "^0.1.6",
     "vile-eslint": "^0.1.14",
     "vile-git": "^0.5.3",
-    "vile-ncu": "^0.2.4",
+    "vile-ncu": "^0.3.0",
     "vile-nsp": "^0.2.14",
     "vile-stat": "^0.1.0",
-    "vile-synt": "^0.1.2"
+    "vile-synt": "^0.1.3"
   },
   "peerDependencies": {
     "vile": ">=0.15.0"

@@ -1,7 +1,9 @@
-Promise = require "bluebird"
-vile_issues = require "./../fixtures/vile_issues"
-example_lcov_parse = require "./../fixtures/example_lcov_parsed"
+fixture = (name) -> require "./../fixtures/#{name}"
 
-module.exports =
-  coverage_issues: vile_issues
-  parsed_lcov: example_lcov_parse
+[
+  "single_issues"
+  "multiple_issues"
+  "multiple_issues_without_top"
+  "empty_issues"
+].forEach (name) ->
+  module.exports[name] = fixture name
