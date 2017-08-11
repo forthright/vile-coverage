@@ -6,6 +6,13 @@ A [Vile](https://vile.io) plugin for tracking your project's test coverage.
 
 - [Node.js](http://nodejs.org)
 
+## Supported Formats
+
+* lcov
+
+*Note: Currently only total file coverage is generated. Ideally per method
+and per line coverage stats will be supported by Vile in future versions.*
+
 ## Installation
 
 This plugin is already packaged with [vile's core lib](https://github.com/forthright/vile),
@@ -13,12 +20,9 @@ but you can also install it manually:
 
     npm i -D vile vile-coverage
 
-## Supported Formats
+## Usage
 
-* lcov
-
-*Note: Currently only total file coverage is generated. Ideally per method
-and per line coverage stats will be supported by Vile in future versions.*
+    vile a -p coverage
 
 ## Config
 
